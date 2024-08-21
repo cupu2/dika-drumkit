@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #221b1b, #444);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 30px;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.drum-kit {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+}
+
+.drum-pad {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.bass-drum {
+    width: 180px;
+    height: 180px;
+    background-color: #333;
+    border: 5px solid #222;
+    bottom: 20px;
+    left: calc(50% - 90px);
+}
+
+.snare-drum {
+    width: 120px;
+    height: 120px;
+    background-color: #555;
+    border: 3px solid #333;
+    bottom: 140px;
+    left: calc(50% - 60px);
+}
+
+.tom1-drum {
+    width: 100px;
+    height: 100px;
+    background-color: #666;
+    border: 3px solid #444;
+    top: 60px;
+    left: calc(50% - 160px);
+}
+
+.tom2-drum {
+    width: 100px;
+    height: 100px;
+    background-color: #666;
+    border: 3px solid #444;
+    top: 60px;
+    right: calc(50% - 160px);
+}
+
+.hi-hat {
+    width: 140px;
+    height: 140px;
+    background-color: #888;
+    border: 4px solid #555;
+    top: 160px;
+    left: calc(50% - 240px);
+}
+
+.crash-cymbal {
+    width: 160px;
+    height: 150px;
+    background-color: #999;
+    border: 5px solid #666;
+    top: 20px;
+    right: calc(130% - 240px);
+}
+
+.Ride-cymbal {
+    width: 160px;
+    height: 160px;
+    background-color: #999;
+    border: 5px solid #666;
+    top: 20px;
+    right: calc(30% - 240px);
+}
+
+.Floor-drum {
+    width: 160px;
+    height: 150px;
+    background-color: #999;
+    border: 4px solid #666;
+    top: 115px;
+    right: calc(40% - 211px);
+}
+.drum-pad:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.drum-pad:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 768px) {
+    .drum-kit {
+        width: 100%;
+        height: auto;
+    }
+
+    .bass-drum, .snare-drum, .tom1-drum, .tom2-drum, .hi-hat, .crash-cymbal {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .drum-kit {
+        width: 100%;
+        height: auto;
+    }
+
+    .bass-drum, .snare-drum, .tom1-drum, .tom2-drum, .hi-hat, .crash-cymbal {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Ganti dengan font yang dipilih */
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* Ganti dengan font yang dipilih */
+    font-size: 36px;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* Ganti dengan font yang dipilih */
+    font-size: 48px; /* Atur ukuran font sesuai kebutuhan */
+    color: #31c5eb; /* Warna teks */
+    text-align: center; /* Memusatkan teks */
+    margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+/* styles.css */
+
+/* Gaya untuk latar belakang drum kit */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Atur gambar untuk menutupi seluruh latar belakang */
+    font-family: 'Roboto', sans-serif; /* Gunakan font yang dipilih */
+}
+
+/* Atur tampilan container */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Atur tampilan logo */
+.logo {
+    width: 150px; /* Atur lebar logo sesuai kebutuhan */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Atur font untuk elemen h1 */
+h1 {
+    font-family: 'Roboto', sans-serif; /* Ganti dengan font yang dipilih */
+    font-size: 48px;
+    color: #fff; /* Warna teks yang kontras dengan latar belakang */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* styles.css */
+
+/* Gaya untuk latar belakang video */
+#background-video {
+    position: fixed; /* Menetapkan video tetap di posisi tetap */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan video menutupi seluruh area latar belakang */
+    z-index: -1; /* Menempatkan video di bawah elemen lain */
+}
+
+/* Atur font untuk elemen h1 */
+h1 {
+    font-family: 'Roboto', sans-serif; /* Ganti dengan font yang dipilih */
+    font-size: 48px; /* Atur ukuran font sesuai kebutuhan */
+    color: #fff; /* Warna teks yang kontras dengan latar belakang */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Atur tampilan container */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Atur tampilan logo */
+.logo {
+    width: 150px; /* Atur lebar logo sesuai kebutuhan */
+    height: auto;
+    margin-bottom: 20px;
+}
